@@ -1,0 +1,321 @@
+@font-face {
+    font-family: "Champagne & Limousines";
+    src: url('../fonts/Champagne & Limousines.ttf');
+}
+@font-face {
+    font-family: "Champagne & Limousines Bold";
+    src: url('../fonts/Champagne & Limousines Bold.ttf');
+}
+@font-face {
+    font-family: HoneyScript-Light;
+    src: url('../fonts/HoneyScript-Light.ttf');
+}
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+body, html {
+    padding: 0;
+    margin: 0;
+    color: #646363;
+    font-size: 16px;
+    font-family: "Champagne & Limousines", sans-serif;
+}
+.clearfix:after {
+	content: ' ';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px; 
+}
+
+/* Шапка с меню и баннером */
+.billboard {
+	background: url('../img/billboard_background.jpg') no-repeat center top / cover;
+	height: 600px;
+	z-index: 1;
+}
+header {
+	width: 100%;
+	height: 100px;
+	background-color: #f0b36b;
+	position: fixed;
+	z-index: 1000;
+}
+.logo {
+	margin: 22px 0;
+	float: left;
+}
+nav {
+	float: right;
+	margin-right: -42px; 
+}
+.top-menu {
+	display: block;
+}
+.top-menu li {
+	float: left;
+	display: block;
+	margin-right: 42px; 
+	padding-top: 25px;
+}
+.top-menu li a {
+	font-family: "Champagne & Limousines Bold";
+	color: #fef8f1;
+	text-decoration: none;
+	font-weight: bold;
+	padding-bottom: 10px;
+	border-bottom: transparent;
+	-webkit-transition: all .6s ease;
+	-o-transition: all .6s ease;
+	transition: all .6s ease;
+}
+.top-menu li a:hover {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #f7f7f7;
+}
+.menu-btn {
+	display: none;
+}
+
+/* Оформление видео-фона */
+.billboard-video {
+	overflow: hidden;
+	z-index: 10;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.bg-player {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+/* Заголовок баннера */
+.titles-billboard {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	z-index: 20;
+}
+.titles-billboard h1 {
+	margin-top: 273px;
+	margin-bottom: 0;
+	font-family: "Champagne & Limousines Bold";
+	color: #fff;
+	font-size: 40px;
+	font-weight: bolder;
+	text-transform: uppercase;		
+}
+.titles-billboard h4 {
+	font-family: HoneyScript-Light;
+	color: #fff;
+	font-size: 50px;
+	margin-top: 20px;
+}
+
+/* Секция Duis Aute Irure */
+.duis-box {
+	margin-top: -80px;
+	padding: 0 15px;
+	position: relative;
+	z-index: 100;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+.duis-box-item {
+	max-width: 25%;
+	text-align: center;
+	padding: 0 15px 30px 15px;
+}
+.duis-box-item h3 {
+	font-family: "Champagne & Limousines Bold";
+	font-size: 25px;
+}
+.duis-box-item p {
+	color: #7e7e7e;
+	line-height: 1.4em;
+}
+
+/* Секция We Design Beautiful Templates */
+.we-design {
+	background-color: #f7f7f7;
+}
+.we-design img {
+	max-width: 625px;
+	margin-top: 68px;
+	margin-left: -108px;
+	float: left;
+}
+.we-design h2 {
+	font-family: "Champagne & Limousines Bold";
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #646363;
+	padding-top: 100px;
+}
+.we-design p {
+	color: #7e7e7e;
+	margin: 30px 0 0 0;
+	line-height: 1.6em;
+}
+.we-design a {
+	background: #eca151;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 3px;
+	display: block;
+	width: 220px;
+	padding: 18px 0;
+	font-family: "Champagne & Limousines Bold";
+	text-transform: uppercase;
+	-webkit-box-shadow: #cd8436 0 3px;
+	        box-shadow: #cd8436 0 3px;
+	float: left;
+	margin-top: 48px;
+}
+.we-design a:hover {
+	background: #f0b36b;	
+}
+
+/* Секция Our Happy Clients. */
+.happy-clients h2 {
+	font-family: "Champagne & Limousines Bold";
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #646363;
+	text-align: center;
+	padding-top: 50px;
+}
+.reviews-box {
+	margin-bottom: 70px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+}
+.reviews-box-item {
+	max-width: 300px;
+	height: 275px;
+	background: #f9f8f8;
+	padding: 20px;
+	margin-bottom: 40px;
+}
+.reviews-box-item img {
+	float: right;
+	position: relative;
+	bottom: -30px;
+	right: -20px;
+	border: 4px solid #fff;
+	border-radius: 50%;
+}
+
+/* Секция Subscribe to our newsletter. */
+.newsletter {
+	min-height: 180px;
+	background: #eba151 url('../img/newsletter_pat.png') repeat;
+	background-position: 0 -20px;
+}
+.newsletter .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding-top: 18px;
+}
+.newsletter p {
+	font-family: "Champagne & Limousines Bold";
+	font-size: 35px;
+	text-transform: uppercase;
+	color: #fff;
+	max-width: 325px;
+}
+.newsletter-form {
+	max-width: 600px;
+	padding: .625em;
+	-webkit-box-shadow: 0 0.125em 0.3125em #cd8436;
+	        box-shadow: 0 0.125em 0.3125em #cd8436;
+	border-radius: 6.25em;
+	background-color: #fff;
+}
+.name-field {
+	width: 180px;
+	padding: 0 .714em;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	border-right: 1px solid #e4e4e4 !important;
+}
+.email-field {
+	padding: 0 .714em;
+	width: 240px;
+}
+.newsletter-btn {
+	color: #fff;
+	background-color: #575451;
+	border-radius: 5em;
+	cursor: pointer;	
+	height: 40px;
+	width: 150px;	
+	padding: 0;
+	-webkit-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	transition: all .4s ease;
+}
+.newsletter-btn:hover {
+	background-color: #6e6b68;
+}
+.name-field, .email-field, .newsletter-btn {
+	font-size: 1.75em;
+	font: inherit;
+	border: 0;
+	outline: 0;	
+}
+
+/* Футер */
+footer {
+	background: #393939;
+	color: #a6a6a6;	
+	text-align: center;
+	margin: 0 auto;
+}
+.footer-hr {
+	max-width: 370px;
+	height: 1px;
+	background-color: #333;
+	border: none;
+	margin: 20px auto;
+}
+.footer-logo {
+	margin-top: 80px;
+}
+footer p {
+	font-size: 13px;
+	padding-bottom: 40px;
+	margin: 0;
+}

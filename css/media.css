@@ -1,0 +1,132 @@
+@media screen and (max-width: 992px) {
+  .duis-box {
+	  -webkit-box-pack: center;
+	      -ms-flex-pack: center;
+	          justify-content: center;
+  }
+  .duis-box-item {
+    max-width: 40%;
+    padding: 0 30px 40px;
+  }
+  .reviews-box-item {
+    max-width: 38%;
+  }
+  .newsletter .container {
+    display: block;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .duis-box-item {
+    max-width: 80%;
+    padding: 0 40px 30px;
+  }
+  .reviews-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .reviews-box-item {
+    max-width: 60%;
+  }
+  .reviews-box-item img {
+    bottom: -60px;
+  }
+}
+
+/* дополнительные точки */
+@media screen and (max-width: 1084px) {
+  .bg-player {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 702px) {
+  .top-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    -webkit-box-shadow: 0 0.125em 0.3125em #a6a6a6;
+            box-shadow: 0 0.125em 0.3125em #a6a6a6;
+  }
+  .menu-btn {
+    display: block;
+    margin-right: 50px;
+    margin-top: 34px;
+  }
+  .top-menu li {
+    float: none;
+    text-align: center;
+  }
+  .top-menu li a {
+    display: block; 
+    color: #646363;
+  }
+  .top-menu li a:hover {
+    color: #cd8436;
+    border-bottom: transparent;
+  }
+}
+
+@media screen and (max-width: 832px) {
+  .we-design img {
+    float: none;
+  }
+  .we-design h2 {
+    padding-top: 20px;
+  }
+  .we-design a {
+    margin: 30px 0 50px;
+  }
+}
+
+@media screen and (min-width: 592px) and (max-width: 660px) {
+  .reviews-box-item img {
+    bottom: -40px;
+  }
+  .reviews-box-item {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 591px) {
+  .reviews-box-item img {
+    bottom: -25px;
+  }
+}
+
+@media screen and (max-width: 638px) {
+  .newsletter .container {
+    display: block;
+  }
+  .newsletter-form {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: transparent;
+  }
+  .name-field, .email-field  {
+    max-width: 80%;
+    padding: .625em 1em;
+    border-radius: 6.25em;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .we-design p, .we-design h2 {
+    text-align: center;
+  }
+  .we-design img {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .we-design a {
+    float: none;
+    margin: 50px auto;
+  }
+}
